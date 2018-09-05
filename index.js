@@ -1,3 +1,6 @@
 import 'bootstrap';
 import './scss/index.scss';
-//import img from './hero.jpg';
+import './hero.jpg';
+import './firstslide.jpg';
+import './secondslide.jpg';
+import './thirdslide.jpg';
