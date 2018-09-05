@@ -1,0 +1,5 @@
+@mixin text-overflow(){
+overflow: hidden !important;
+text-overflow: ellipsis;
+margin:0;
+}

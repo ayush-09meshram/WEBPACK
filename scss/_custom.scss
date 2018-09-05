@@ -1,0 +1,55 @@
+//@import 'plugin/plugin-dir';
+//@import 'layout/layout-dir';
+//@import 'state/state-dir';
+
+
+//BODY
+@import 'base';
+//MIXINS
+@import 'mixin';
+//VARIABLES
+@import 'variables';
+//OURTEAM
+@import 'ourteam';
+//FOOTER
+@import 'footer';
+
+
+//HEADER
+#nav{
+	width: 100%;
+		overflow: hidden;
+}
+.navitem,.navlink{
+	color:white !important;
+}
+.dropdown{
+	overflow: auto;
+}
+//JUMBOTRON
+.jumbotron{
+	background-color: transparent !important;
+	color:$whas !important;
+}
+.jumbotron a:hover i{
+	font-size: 20px;
+		-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+//CAROUSAL
+#mycarousal{
+	h5{
+		font-size: 4rem;
+	}
+	p{
+		font-size: 2rem !important;
+	}
+	padding: 2rem;
+}
+.card-group{
+	padding: 2rem;
+	margin:auto;
+}
+
+
