@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="css/animate.css" rel="stylesheet">
   <script type="text/javascript" src="dist/bundle.js"></script>
+<style>
 
+@media (max-width:600px){
+  .jumbotron{
+    padding-top:5rem;
+  }
+  }
+
+  </style>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -29,13 +37,13 @@
   <div class="collapse navbar-collapse navbar-fixed-top" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-fixed-top">
       <li class="nav-item">
-        <a class="nav-link" role="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Welcome home!" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" role="button" data-container="body"data-toggle="tooltip" data-placement="bottom" title="Home" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" role="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Get your login credentials!" href="#">Link</a>
+        <a class="nav-link" role="button" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Link" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" role="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Connect with us!" href="#">Contact us</a>
+        <a class="nav-link" role="button" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Contact us" href="#">Contact us</a>
       </li>
 
       <li class="nav-item dropdown dmenu">
@@ -70,8 +78,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-default my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalCenter" type="submit">Search</button>
-
+      <button class="btn btn-outline-default my-2 my-sm-0" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="And here's some amazing content. It's very engaging. Right?" type="submit" href="#">Search</button>
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -478,7 +485,17 @@
     </div>
 </section>
 <!-- Team -->
-
+<!--input group-->
+<div class="input-group">
+  <span class="input-group-addon text-white" id="basic-addon1">@</span>
+  <input type="text text-white" class="form-control" placeholder="Username" aria-describedby="basic-addon1" style="background-color: transparent !important ;">
+</div>
+<br>
+<div class="input-group">
+  <input type="text text-white" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" style="background-color: transparent !important; color:white !important;">
+  <span class="input-group-addon text-white" id="basic-addon2">@WEBPACK.com</span>
+</div>
+<br>
      <!-- Footer -->
   <section id="footer">
     <div class="container">
